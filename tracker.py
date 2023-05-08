@@ -3,7 +3,8 @@ from dotenv import load_dotenv
 from shodan import Shodan
 
 def shodan():
-    api_key = os.environ["SHODAN_API_KEY"].strip()
+    api_key = ["SHODAN_API_KEY"]
+    #api_key = os.environ["SHODAN_API_KEY"].strip()
     api = Shodan(api_key)
     # https://michaelkoczwara.medium.com/hunting-c2-with-shodan-223ca250d06f
     # https://michaelkoczwara.medium.com/cobalt-strike-c2-hunting-with-shodan-c448d501a6e2
